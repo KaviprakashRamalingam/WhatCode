@@ -1,0 +1,104 @@
+.call-stack-visualization {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.call-stack-visualization h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.stack-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+}
+
+.stack-frame {
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.stack-frame:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.frame-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.frame-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.frame-line {
+  font-size: 12px;
+  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.frame-section {
+  margin-bottom: 12px;
+}
+
+.frame-section strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.frame-variables {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.frame-variables .variable-item {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+.var-name {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.var-value {
+  font-family: 'Courier New', monospace;
+}
+
+.frame-return {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+
+.frame-return strong {
+  margin-right: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+

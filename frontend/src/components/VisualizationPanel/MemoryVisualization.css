@@ -1,0 +1,102 @@
+.memory-visualization {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.memory-visualization h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.memory-section,
+.variable-section {
+  margin-bottom: 32px;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.memory-object {
+  padding: 12px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.memory-address {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-bottom: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.memory-type {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.memory-value {
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+
+.memory-references {
+  font-size: 11px;
+  opacity: 0.9;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.variable-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.variable-card {
+  padding: 12px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.var-name {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.var-value-card {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+
+.var-type {
+  font-size: 10px;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
